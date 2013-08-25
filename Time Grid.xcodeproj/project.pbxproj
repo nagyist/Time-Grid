@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC20CDE17C980EE0029C973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDD17C980EE0029C973 /* UIKit.framework */; };
+		AEC20CE017C980EE0029C973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDF17C980EE0029C973 /* Foundation.framework */; };
+		AEC20CE217C980EE0029C973 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CE117C980EE0029C973 /* CoreGraphics.framework */; };
+		AEC20CE817C980EE0029C973 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CE617C980EE0029C973 /* InfoPlist.strings */; };
+		AEC20CEA17C980EE0029C973 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20CE917C980EE0029C973 /* main.m */; };
+		AEC20CEE17C980EE0029C973 /* TGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20CED17C980EE0029C973 /* TGAppDelegate.m */; };
+		AEC20CF017C980EE0029C973 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CEF17C980EE0029C973 /* Default.png */; };
+		AEC20CF217C980EE0029C973 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF117C980EE0029C973 /* Default@2x.png */; };
+		AEC20CF417C980EE0029C973 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF317C980EE0029C973 /* Default-568h@2x.png */; };
+		AEC20CF717C980EE0029C973 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */; };
+		AEC20CFA17C980EE0029C973 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */; };
+		AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20CFC17C980EE0029C973 /* TGViewController.m */; };
+		AEC20D0517C980EE0029C973 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D0417C980EE0029C973 /* SenTestingKit.framework */; };
+		AEC20D0617C980EE0029C973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDD17C980EE0029C973 /* UIKit.framework */; };
+		AEC20D0717C980EE0029C973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDF17C980EE0029C973 /* Foundation.framework */; };
+		AEC20D0F17C980EE0029C973 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D0D17C980EE0029C973 /* InfoPlist.strings */; };
+		AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D1117C980EE0029C973 /* Time_GridTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC20D0817C980EE0029C973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC20CD217C980EE0029C973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC20CD917C980EE0029C973;
+			remoteInfo = "Time Grid";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEC20CDA17C980EE0029C973 /* Time Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC20CDD17C980EE0029C973 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AEC20CDF17C980EE0029C973 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEC20CE117C980EE0029C973 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AEC20CE517C980EE0029C973 /* Time Grid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Time Grid-Info.plist"; sourceTree = "<group>"; };
+		AEC20CE717C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEC20CE917C980EE0029C973 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEC20CEB17C980EE0029C973 /* Time Grid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Time Grid-Prefix.pch"; sourceTree = "<group>"; };
+		AEC20CEC17C980EE0029C973 /* TGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGAppDelegate.h; sourceTree = "<group>"; };
+		AEC20CED17C980EE0029C973 /* TGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAppDelegate.m; sourceTree = "<group>"; };
+		AEC20CEF17C980EE0029C973 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AEC20CF117C980EE0029C973 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AEC20CF317C980EE0029C973 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AEC20CF617C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AEC20CF917C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AEC20CFB17C980EE0029C973 /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
+		AEC20CFC17C980EE0029C973 /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
+		AEC20D0317C980EE0029C973 /* Time GridTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time GridTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC20D0417C980EE0029C973 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AEC20D0C17C980EE0029C973 /* Time GridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Time GridTests-Info.plist"; sourceTree = "<group>"; };
+		AEC20D0E17C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEC20D1017C980EE0029C973 /* Time_GridTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time_GridTests.h; sourceTree = "<group>"; };
+		AEC20D1117C980EE0029C973 /* Time_GridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time_GridTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC20CD717C980EE0029C973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20CDE17C980EE0029C973 /* UIKit.framework in Frameworks */,
+				AEC20CE017C980EE0029C973 /* Foundation.framework in Frameworks */,
+				AEC20CE217C980EE0029C973 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC20CFF17C980EE0029C973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20D0517C980EE0029C973 /* SenTestingKit.framework in Frameworks */,
+				AEC20D0617C980EE0029C973 /* UIKit.framework in Frameworks */,
+				AEC20D0717C980EE0029C973 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEC20CD117C980EE0029C973 = {
+			isa = PBXGroup;
+			children = (
+				AEC20CE317C980EE0029C973 /* Time Grid */,
+				AEC20D0A17C980EE0029C973 /* Time GridTests */,
+				AEC20CDC17C980EE0029C973 /* Frameworks */,
+				AEC20CDB17C980EE0029C973 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC20CDB17C980EE0029C973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20CDA17C980EE0029C973 /* Time Grid.app */,
+				AEC20D0317C980EE0029C973 /* Time GridTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC20CDC17C980EE0029C973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20CDD17C980EE0029C973 /* UIKit.framework */,
+				AEC20CDF17C980EE0029C973 /* Foundation.framework */,
+				AEC20CE117C980EE0029C973 /* CoreGraphics.framework */,
+				AEC20D0417C980EE0029C973 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEC20CE317C980EE0029C973 /* Time Grid */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20CEC17C980EE0029C973 /* TGAppDelegate.h */,
+				AEC20CED17C980EE0029C973 /* TGAppDelegate.m */,
+				AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */,
+				AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */,
+				AEC20CFB17C980EE0029C973 /* TGViewController.h */,
+				AEC20CFC17C980EE0029C973 /* TGViewController.m */,
+				AEC20CE417C980EE0029C973 /* Supporting Files */,
+			);
+			path = "Time Grid";
+			sourceTree = "<group>";
+		};
+		AEC20CE417C980EE0029C973 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20CE517C980EE0029C973 /* Time Grid-Info.plist */,
+				AEC20CE617C980EE0029C973 /* InfoPlist.strings */,
+				AEC20CE917C980EE0029C973 /* main.m */,
+				AEC20CEB17C980EE0029C973 /* Time Grid-Prefix.pch */,
+				AEC20CEF17C980EE0029C973 /* Default.png */,
+				AEC20CF117C980EE0029C973 /* Default@2x.png */,
+				AEC20CF317C980EE0029C973 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEC20D0A17C980EE0029C973 /* Time GridTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20D1017C980EE0029C973 /* Time_GridTests.h */,
+				AEC20D1117C980EE0029C973 /* Time_GridTests.m */,
+				AEC20D0B17C980EE0029C973 /* Supporting Files */,
+			);
+			path = "Time GridTests";
+			sourceTree = "<group>";
+		};
+		AEC20D0B17C980EE0029C973 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEC20D0C17C980EE0029C973 /* Time GridTests-Info.plist */,
+				AEC20D0D17C980EE0029C973 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC20CD917C980EE0029C973 /* Time Grid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC20D1517C980EE0029C973 /* Build configuration list for PBXNativeTarget "Time Grid" */;
+			buildPhases = (
+				AEC20CD617C980EE0029C973 /* Sources */,
+				AEC20CD717C980EE0029C973 /* Frameworks */,
+				AEC20CD817C980EE0029C973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Grid";
+			productName = "Time Grid";
+			productReference = AEC20CDA17C980EE0029C973 /* Time Grid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC20D0217C980EE0029C973 /* Time GridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC20D1817C980EE0029C973 /* Build configuration list for PBXNativeTarget "Time GridTests" */;
+			buildPhases = (
+				AEC20CFE17C980EE0029C973 /* Sources */,
+				AEC20CFF17C980EE0029C973 /* Frameworks */,
+				AEC20D0017C980EE0029C973 /* Resources */,
+				AEC20D0117C980EE0029C973 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC20D0917C980EE0029C973 /* PBXTargetDependency */,
+			);
+			name = "Time GridTests";
+			productName = "Time GridTests";
+			productReference = AEC20D0317C980EE0029C973 /* Time GridTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC20CD217C980EE0029C973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TG;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jerome Thomere";
+			};
+			buildConfigurationList = AEC20CD517C980EE0029C973 /* Build configuration list for PBXProject "Time Grid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AEC20CD117C980EE0029C973;
+			productRefGroup = AEC20CDB17C980EE0029C973 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC20CD917C980EE0029C973 /* Time Grid */,
+				AEC20D0217C980EE0029C973 /* Time GridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC20CD817C980EE0029C973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20CE817C980EE0029C973 /* InfoPlist.strings in Resources */,
+				AEC20CF017C980EE0029C973 /* Default.png in Resources */,
+				AEC20CF217C980EE0029C973 /* Default@2x.png in Resources */,
+				AEC20CF417C980EE0029C973 /* Default-568h@2x.png in Resources */,
+				AEC20CF717C980EE0029C973 /* MainStoryboard_iPhone.storyboard in Resources */,
+				AEC20CFA17C980EE0029C973 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC20D0017C980EE0029C973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20D0F17C980EE0029C973 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEC20D0117C980EE0029C973 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC20CD617C980EE0029C973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20CEA17C980EE0029C973 /* main.m in Sources */,
+				AEC20CEE17C980EE0029C973 /* TGAppDelegate.m in Sources */,
+				AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC20CFE17C980EE0029C973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC20D0917C980EE0029C973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC20CD917C980EE0029C973 /* Time Grid */;
+			targetProxy = AEC20D0817C980EE0029C973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC20CE617C980EE0029C973 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC20CE717C980EE0029C973 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC20CF617C980EE0029C973 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC20CF917C980EE0029C973 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AEC20D0D17C980EE0029C973 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC20D0E17C980EE0029C973 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC20D1317C980EE0029C973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC20D1417C980EE0029C973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC20D1617C980EE0029C973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
+				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AEC20D1717C980EE0029C973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
+				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AEC20D1917C980EE0029C973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Time Grid.app/Time Grid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
+				INFOPLIST_FILE = "Time GridTests/Time GridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AEC20D1A17C980EE0029C973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Time Grid.app/Time Grid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
+				INFOPLIST_FILE = "Time GridTests/Time GridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC20CD517C980EE0029C973 /* Build configuration list for PBXProject "Time Grid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC20D1317C980EE0029C973 /* Debug */,
+				AEC20D1417C980EE0029C973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC20D1517C980EE0029C973 /* Build configuration list for PBXNativeTarget "Time Grid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC20D1617C980EE0029C973 /* Debug */,
+				AEC20D1717C980EE0029C973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEC20D1817C980EE0029C973 /* Build configuration list for PBXNativeTarget "Time GridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC20D1917C980EE0029C973 /* Debug */,
+				AEC20D1A17C980EE0029C973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEC20CD217C980EE0029C973 /* Project object */;
+}
