@@ -7,15 +7,27 @@
 //
 
 #import "TGAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import "TGLoginViewController.h"
 
 @implementation TGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSLog(@"TGAppDelegate %@ didFinishLaunchingWithOptions %@", application, launchOptions);
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application  openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication   annotation:(id)annotation
+{
+    NSLog(@"TGAppDelegate %@ openURL  sourceApplication: %@", application, sourceApplication);
+    return [FBSession.activeSession handleOpenURL:url];
+}
+
+
+
+#pragma mark - Application events
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

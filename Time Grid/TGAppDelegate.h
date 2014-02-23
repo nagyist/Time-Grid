@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class TGViewController;
+
 @interface TGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) TGViewController *mainViewController;
 
 @end

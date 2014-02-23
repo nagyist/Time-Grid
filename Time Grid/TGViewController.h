@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TGLoginViewController.h"
 
-@interface TGViewController : UIViewController
+@interface TGViewController : UIViewController<TGLoginViewDelegate>
 
 @end

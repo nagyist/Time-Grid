@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEA6C4D918023F6E007917E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6C4D818023F6E007917E7 /* Images.xcassets */; };
 		AEC20CDE17C980EE0029C973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDD17C980EE0029C973 /* UIKit.framework */; };
 		AEC20CE017C980EE0029C973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDF17C980EE0029C973 /* Foundation.framework */; };
 		AEC20CE217C980EE0029C973 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CE117C980EE0029C973 /* CoreGraphics.framework */; };
@@ -17,13 +18,18 @@
 		AEC20CF217C980EE0029C973 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF117C980EE0029C973 /* Default@2x.png */; };
 		AEC20CF417C980EE0029C973 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF317C980EE0029C973 /* Default-568h@2x.png */; };
 		AEC20CF717C980EE0029C973 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */; };
-		AEC20CFA17C980EE0029C973 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */; };
 		AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20CFC17C980EE0029C973 /* TGViewController.m */; };
 		AEC20D0517C980EE0029C973 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D0417C980EE0029C973 /* SenTestingKit.framework */; };
 		AEC20D0617C980EE0029C973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDD17C980EE0029C973 /* UIKit.framework */; };
 		AEC20D0717C980EE0029C973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDF17C980EE0029C973 /* Foundation.framework */; };
 		AEC20D0F17C980EE0029C973 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D0D17C980EE0029C973 /* InfoPlist.strings */; };
 		AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D1117C980EE0029C973 /* Time_GridTests.m */; };
+		AEC20D1C17C9823D0029C973 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */; };
+		AEC20D1D17C9823D0029C973 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */; };
+		AEC20D9717CB0BB10029C973 /* TGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */; };
+		AEC20D9817CB0BB10029C973 /* TGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */; };
+		AEC20D9917CB0BB10029C973 /* TGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */; };
+		AEC20D9A17CB0BB10029C973 /* TGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AEA6C4D818023F6E007917E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AEC20CDA17C980EE0029C973 /* Time Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC20CDD17C980EE0029C973 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEC20CDF17C980EE0029C973 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,7 +58,6 @@
 		AEC20CF117C980EE0029C973 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AEC20CF317C980EE0029C973 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AEC20CF617C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		AEC20CF917C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		AEC20CFB17C980EE0029C973 /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
 		AEC20CFC17C980EE0029C973 /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
 		AEC20D0317C980EE0029C973 /* Time GridTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time GridTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +66,10 @@
 		AEC20D0E17C980EE0029C973 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AEC20D1017C980EE0029C973 /* Time_GridTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time_GridTests.h; sourceTree = "<group>"; };
 		AEC20D1117C980EE0029C973 /* Time_GridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time_GridTests.m; sourceTree = "<group>"; };
+		AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../Facebook/facebook-ios-sdk/build/FacebookSDK.framework"; sourceTree = "<group>"; };
+		AEC20D9417CB0BB10029C973 /* TGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLoginViewController.h; sourceTree = "<group>"; };
+		AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLoginViewController.m; sourceTree = "<group>"; };
+		AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 				AEC20CDE17C980EE0029C973 /* UIKit.framework in Frameworks */,
 				AEC20CE017C980EE0029C973 /* Foundation.framework in Frameworks */,
 				AEC20CE217C980EE0029C973 /* CoreGraphics.framework in Frameworks */,
+				AEC20D1C17C9823D0029C973 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +91,7 @@
 				AEC20D0517C980EE0029C973 /* SenTestingKit.framework in Frameworks */,
 				AEC20D0617C980EE0029C973 /* UIKit.framework in Frameworks */,
 				AEC20D0717C980EE0029C973 /* Foundation.framework in Frameworks */,
+				AEC20D1D17C9823D0029C973 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +120,7 @@
 		AEC20CDC17C980EE0029C973 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */,
 				AEC20CDD17C980EE0029C973 /* UIKit.framework */,
 				AEC20CDF17C980EE0029C973 /* Foundation.framework */,
 				AEC20CE117C980EE0029C973 /* CoreGraphics.framework */,
@@ -122,9 +135,12 @@
 				AEC20CEC17C980EE0029C973 /* TGAppDelegate.h */,
 				AEC20CED17C980EE0029C973 /* TGAppDelegate.m */,
 				AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */,
-				AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */,
 				AEC20CFB17C980EE0029C973 /* TGViewController.h */,
 				AEC20CFC17C980EE0029C973 /* TGViewController.m */,
+				AEC20D9417CB0BB10029C973 /* TGLoginViewController.h */,
+				AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */,
+				AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */,
+				AEA6C4D818023F6E007917E7 /* Images.xcassets */,
 				AEC20CE417C980EE0029C973 /* Supporting Files */,
 			);
 			path = "Time Grid";
@@ -237,10 +253,11 @@
 			files = (
 				AEC20CE817C980EE0029C973 /* InfoPlist.strings in Resources */,
 				AEC20CF017C980EE0029C973 /* Default.png in Resources */,
+				AEA6C4D918023F6E007917E7 /* Images.xcassets in Resources */,
 				AEC20CF217C980EE0029C973 /* Default@2x.png in Resources */,
 				AEC20CF417C980EE0029C973 /* Default-568h@2x.png in Resources */,
 				AEC20CF717C980EE0029C973 /* MainStoryboard_iPhone.storyboard in Resources */,
-				AEC20CFA17C980EE0029C973 /* MainStoryboard_iPad.storyboard in Resources */,
+				AEC20D9917CB0BB10029C973 /* TGLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC20D0F17C980EE0029C973 /* InfoPlist.strings in Resources */,
+				AEC20D9A17CB0BB10029C973 /* TGLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +296,7 @@
 				AEC20CEA17C980EE0029C973 /* main.m in Sources */,
 				AEC20CEE17C980EE0029C973 /* TGAppDelegate.m in Sources */,
 				AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */,
+				AEC20D9717CB0BB10029C973 /* TGLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */,
+				AEC20D9817CB0BB10029C973 /* TGLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +334,6 @@
 				AEC20CF617C980EE0029C973 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AEC20CF817C980EE0029C973 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEC20CF917C980EE0029C973 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AEC20D0D17C980EE0029C973 /* InfoPlist.strings */ = {
@@ -396,10 +408,17 @@
 		AEC20D1617C980EE0029C973 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Facebook/facebook-ios-sdk/build\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
 				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,10 +426,17 @@
 		AEC20D1717C980EE0029C973 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Facebook/facebook-ios-sdk/build\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
 				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -422,6 +448,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../../Facebook/facebook-ios-sdk/build\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
@@ -439,6 +466,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../../Facebook/facebook-ios-sdk/build\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
@@ -468,6 +496,7 @@
 				AEC20D1717C980EE0029C973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEC20D1817C980EE0029C973 /* Build configuration list for PBXNativeTarget "Time GridTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +505,7 @@
 				AEC20D1A17C980EE0029C973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
