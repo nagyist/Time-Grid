@@ -11,10 +11,19 @@
 #import "TGLoginViewController.h"
 
 @interface TGViewController ()
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *profileView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet FBLoginView *fbLoginView;
 
 @end
 
 @implementation TGViewController
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 - (void)viewDidLoad
 {
@@ -55,7 +64,7 @@
 - (void)openSession
 {
     NSLog(@"TGViewController openSession");
-    [FBSession openActiveSessionWithReadPermissions:nil
+    [FBSession openActiveSessionWithReadPermissions:@[@"read_stream"]
                                        allowLoginUI:YES
                                   completionHandler:
      ^(FBSession *session,
@@ -103,13 +112,22 @@
                                   otherButtonTitles:nil];
         [alertView show];
     }
+    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+        if (!error) {
+            // Success! Include your code to handle the results here
+            self.userNameLabel.text = user.name;
+            self.profileView.profileID = [user objectForKey:@"id"];
+            self.profileView.pictureCropping = FBProfilePictureCroppingSquare;
+        } else {
+            // An error occurred, we need to handle the error
+            // See: https://developers.facebook.com/docs/ios/errors
+        }
+    }];
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)fbLogout:(id)sender {
+    [FBSession.activeSession closeAndClearTokenInformation];
 }
 
 @end

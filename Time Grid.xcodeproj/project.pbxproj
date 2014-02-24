@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5E5A8818BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */; };
+		AE5E5A8918BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */; };
 		AEA6C4D918023F6E007917E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6C4D818023F6E007917E7 /* Images.xcassets */; };
 		AEC20CDE17C980EE0029C973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDD17C980EE0029C973 /* UIKit.framework */; };
 		AEC20CE017C980EE0029C973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20CDF17C980EE0029C973 /* Foundation.framework */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE5E5A8618BB1F6C00BB66C0 /* TGPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPostsViewController.h; sourceTree = "<group>"; };
+		AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPostsViewController.m; sourceTree = "<group>"; };
 		AEA6C4D818023F6E007917E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AEC20CDA17C980EE0029C973 /* Time Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC20CDD17C980EE0029C973 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -137,6 +141,8 @@
 				AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */,
 				AEC20CFB17C980EE0029C973 /* TGViewController.h */,
 				AEC20CFC17C980EE0029C973 /* TGViewController.m */,
+				AE5E5A8618BB1F6C00BB66C0 /* TGPostsViewController.h */,
+				AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */,
 				AEC20D9417CB0BB10029C973 /* TGLoginViewController.h */,
 				AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */,
 				AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */,
@@ -297,6 +303,7 @@
 				AEC20CEE17C980EE0029C973 /* TGAppDelegate.m in Sources */,
 				AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */,
 				AEC20D9717CB0BB10029C973 /* TGLoginViewController.m in Sources */,
+				AE5E5A8818BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5E5A8918BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */,
 				AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */,
 				AEC20D9817CB0BB10029C973 /* TGLoginViewController.m in Sources */,
 			);
@@ -417,6 +425,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
 				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -435,6 +445,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Time Grid/Time Grid-Prefix.pch";
 				INFOPLIST_FILE = "Time Grid/Time Grid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
