@@ -8,6 +8,8 @@
 
 #import "TGPostsViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "TGPost.h"
+#import "TGPostCollectionViewCell.h"
 
 @interface TGPostsViewController ()
 
@@ -32,7 +34,7 @@
 
 
 - (void) requestFeed {
-    NSString *fqlQuery = @"SELECT post_id, created_time,  type FROM stream WHERE filter_key in (SELECT filter_key FROM stream_filter WHERE uid=me() AND type='newsfeed')AND is_hidden = 0 LIMIT 100";
+    NSString *fqlQuery = @"SELECT post_id, created_time,  type, description, message, attachment FROM stream WHERE filter_key in (SELECT filter_key FROM stream_filter WHERE uid=me() AND type='newsfeed')AND is_hidden = 0 LIMIT 100";
 
     // Make the API request that uses FQL
     [FBRequestConnection startWithGraphPath:@"/fql"
@@ -45,8 +47,7 @@
          if (error) {
              NSLog(@"Error: %@", [error localizedDescription]);
          }  else {
-             //NSLog(@"Result: %@", result);
-             self.posts = [result valueForKey:@"data"];
+             self.posts = [TGPost postsWithQueryResult:result];
              [self.collectionView reloadData];
          }
      }];
@@ -61,13 +62,24 @@
     return 1;
 }
 
++ (NSString *) typeIdentifierWithPost:(TGPost *)post {
+    switch (post.type) {
+        case TGPostTypeStatusUpdate:
+            return @"PostCell";
+            break;
+
+        default:
+            return @"StatusUpdate";
+            break;
+    }
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UILabel* postLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-    NSDictionary *post = [self.posts objectAtIndex:indexPath.row];
-    postLabel.text = [post valueForKey:@"post_id"];
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PostCell" forIndexPath:indexPath];
-    [cell addSubview:postLabel];
-    return cell;
+    TGPost* post = [self.posts objectAtIndex:indexPath.row];
+    NSString *identifier = [TGPostsViewController typeIdentifierWithPost:post];
+    TGPostCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    [cell setMessage:post.message];
+   return cell;
 }
 
 

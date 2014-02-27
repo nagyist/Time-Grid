@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TGLoginViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface TGViewController : UIViewController<TGLoginViewDelegate>
+@interface TGViewController : UIViewController<FBLoginViewDelegate>
 
 @end

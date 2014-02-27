@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE34C14A18BDBBCD00A3D44A /* TGPost.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C14918BDBBCD00A3D44A /* TGPost.m */; };
+		AE34C14B18BDBBCD00A3D44A /* TGPost.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C14918BDBBCD00A3D44A /* TGPost.m */; };
+		AE34C14E18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C14D18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m */; };
+		AE34C14F18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C14D18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m */; };
+		AE34C15318BF04FE00A3D44A /* TGPostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C15218BF04FE00A3D44A /* TGPostCollectionViewCell.m */; };
+		AE34C15418BF04FE00A3D44A /* TGPostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE34C15218BF04FE00A3D44A /* TGPostCollectionViewCell.m */; };
 		AE5E5A8818BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */; };
 		AE5E5A8918BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */; };
 		AEA6C4D918023F6E007917E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6C4D818023F6E007917E7 /* Images.xcassets */; };
@@ -28,10 +34,6 @@
 		AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D1117C980EE0029C973 /* Time_GridTests.m */; };
 		AEC20D1C17C9823D0029C973 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */; };
 		AEC20D1D17C9823D0029C973 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */; };
-		AEC20D9717CB0BB10029C973 /* TGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */; };
-		AEC20D9817CB0BB10029C973 /* TGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */; };
-		AEC20D9917CB0BB10029C973 /* TGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */; };
-		AEC20D9A17CB0BB10029C973 /* TGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE34C14818BDBBCD00A3D44A /* TGPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPost.h; sourceTree = "<group>"; };
+		AE34C14918BDBBCD00A3D44A /* TGPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPost.m; sourceTree = "<group>"; };
+		AE34C14C18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStatusUpdateCollectionViewCell.h; sourceTree = "<group>"; };
+		AE34C14D18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGStatusUpdateCollectionViewCell.m; sourceTree = "<group>"; };
+		AE34C15118BF04FE00A3D44A /* TGPostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPostCollectionViewCell.h; sourceTree = "<group>"; };
+		AE34C15218BF04FE00A3D44A /* TGPostCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPostCollectionViewCell.m; sourceTree = "<group>"; };
 		AE5E5A8618BB1F6C00BB66C0 /* TGPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPostsViewController.h; sourceTree = "<group>"; };
 		AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPostsViewController.m; sourceTree = "<group>"; };
 		AEA6C4D818023F6E007917E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -71,9 +79,6 @@
 		AEC20D1017C980EE0029C973 /* Time_GridTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time_GridTests.h; sourceTree = "<group>"; };
 		AEC20D1117C980EE0029C973 /* Time_GridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time_GridTests.m; sourceTree = "<group>"; };
 		AEC20D1B17C9823D0029C973 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../Facebook/facebook-ios-sdk/build/FacebookSDK.framework"; sourceTree = "<group>"; };
-		AEC20D9417CB0BB10029C973 /* TGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLoginViewController.h; sourceTree = "<group>"; };
-		AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLoginViewController.m; sourceTree = "<group>"; };
-		AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE34C14618BDBB7600A3D44A /* PostsCollection */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E5A8618BB1F6C00BB66C0 /* TGPostsViewController.h */,
+				AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */,
+				AE34C15118BF04FE00A3D44A /* TGPostCollectionViewCell.h */,
+				AE34C15218BF04FE00A3D44A /* TGPostCollectionViewCell.m */,
+				AE34C14C18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.h */,
+				AE34C14D18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m */,
+			);
+			name = PostsCollection;
+			sourceTree = "<group>";
+		};
+		AE34C14718BDBB9B00A3D44A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AE34C14818BDBBCD00A3D44A /* TGPost.h */,
+				AE34C14918BDBBCD00A3D44A /* TGPost.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		AEC20CD117C980EE0029C973 = {
 			isa = PBXGroup;
 			children = (
@@ -141,11 +168,8 @@
 				AEC20CF517C980EE0029C973 /* MainStoryboard_iPhone.storyboard */,
 				AEC20CFB17C980EE0029C973 /* TGViewController.h */,
 				AEC20CFC17C980EE0029C973 /* TGViewController.m */,
-				AE5E5A8618BB1F6C00BB66C0 /* TGPostsViewController.h */,
-				AE5E5A8718BB1F6C00BB66C0 /* TGPostsViewController.m */,
-				AEC20D9417CB0BB10029C973 /* TGLoginViewController.h */,
-				AEC20D9517CB0BB10029C973 /* TGLoginViewController.m */,
-				AEC20D9617CB0BB10029C973 /* TGLoginViewController.xib */,
+				AE34C14618BDBB7600A3D44A /* PostsCollection */,
+				AE34C14718BDBB9B00A3D44A /* Data */,
 				AEA6C4D818023F6E007917E7 /* Images.xcassets */,
 				AEC20CE417C980EE0029C973 /* Supporting Files */,
 			);
@@ -263,7 +287,6 @@
 				AEC20CF217C980EE0029C973 /* Default@2x.png in Resources */,
 				AEC20CF417C980EE0029C973 /* Default-568h@2x.png in Resources */,
 				AEC20CF717C980EE0029C973 /* MainStoryboard_iPhone.storyboard in Resources */,
-				AEC20D9917CB0BB10029C973 /* TGLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC20D0F17C980EE0029C973 /* InfoPlist.strings in Resources */,
-				AEC20D9A17CB0BB10029C973 /* TGLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,9 +323,11 @@
 			files = (
 				AEC20CEA17C980EE0029C973 /* main.m in Sources */,
 				AEC20CEE17C980EE0029C973 /* TGAppDelegate.m in Sources */,
+				AE34C15318BF04FE00A3D44A /* TGPostCollectionViewCell.m in Sources */,
 				AEC20CFD17C980EE0029C973 /* TGViewController.m in Sources */,
-				AEC20D9717CB0BB10029C973 /* TGLoginViewController.m in Sources */,
 				AE5E5A8818BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */,
+				AE34C14E18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m in Sources */,
+				AE34C14A18BDBBCD00A3D44A /* TGPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5E5A8918BB1F6C00BB66C0 /* TGPostsViewController.m in Sources */,
+				AE34C14B18BDBBCD00A3D44A /* TGPost.m in Sources */,
+				AE34C14F18BE4E3800A3D44A /* TGStatusUpdateCollectionViewCell.m in Sources */,
 				AEC20D1217C980EE0029C973 /* Time_GridTests.m in Sources */,
-				AEC20D9817CB0BB10029C973 /* TGLoginViewController.m in Sources */,
+				AE34C15418BF04FE00A3D44A /* TGPostCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

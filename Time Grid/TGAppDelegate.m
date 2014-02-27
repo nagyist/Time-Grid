@@ -8,7 +8,6 @@
 
 #import "TGAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "TGLoginViewController.h"
 
 @implementation TGAppDelegate
 
@@ -21,7 +20,12 @@
 - (BOOL)application:(UIApplication *)application  openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication   annotation:(id)annotation
 {
     NSLog(@"TGAppDelegate %@ openURL  sourceApplication: %@", application, sourceApplication);
-    return [FBSession.activeSession handleOpenURL:url];
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+
+    // You can add your app-specific url handling code here if needed
+
+    return wasHandled;
 }
 
 

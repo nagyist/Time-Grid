@@ -7,13 +7,12 @@
 //
 
 #import "TGViewController.h"
-#import <FacebookSDK/FacebookSDK.h>
-#import "TGLoginViewController.h"
 
 @interface TGViewController ()
 @property (weak, nonatomic) IBOutlet FBProfilePictureView *profileView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet FBLoginView *fbLoginView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *pushPostsButtonItem;
 
 @end
 
@@ -27,107 +26,66 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"TGViewController viewDidLoad FBSession.activeSession.state=%d", FBSession.activeSession.state);
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
-        // Yes, so just open the session (this won't display any UX).
-        NSLog(@"FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded run openSession");
-        [self openSession];
+    self.fbLoginView.readPermissions = @[@"basic_info", @"email", @"read_stream"];
+}
+
+// This method will be called when the user information has been fetched
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
+                            user:(id<FBGraphUser>)user {
+    self.userNameLabel.text = user.name;
+    self.profileView.profileID = user.id;
+    self.profileView.pictureCropping = FBProfilePictureCroppingSquare;
+}
+
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
+    self.profileView.profileID = nil;
+    self.userNameLabel.text = @"";
+}
+
+// Handle possible errors that can occur during login
+- (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error {
+    NSString *alertMessage, *alertTitle;
+
+    // If the user should perform an action outside of you app to recover,
+    // the SDK will provide a message for the user, you just need to surface it.
+    // This conveniently handles cases like Facebook password change or unverified Facebook accounts.
+    if ([FBErrorUtility shouldNotifyUserForError:error]) {
+        alertTitle = @"Facebook error";
+        alertMessage = [FBErrorUtility userMessageForError:error];
+
+        // This code will handle session closures that happen outside of the app
+        // You can take a look at our error handling guide to know more about it
+        // https://developers.facebook.com/docs/ios/errors
+    } else if ([FBErrorUtility errorCategoryForError:error] == FBErrorCategoryAuthenticationReopenSession) {
+        alertTitle = @"Session Error";
+        alertMessage = @"Your current session is no longer valid. Please log in again.";
+
+        // If the user has cancelled a login, we will do nothing.
+        // You can also choose to show the user a message if cancelling login will result in
+        // the user not being able to complete a task they had initiated in your app
+        // (like accessing FB-stored information or posting to Facebook)
+    } else if ([FBErrorUtility errorCategoryForError:error] == FBErrorCategoryUserCancelled) {
+        NSLog(@"user cancelled login");
+
+        // For simplicity, this sample handles other errors with a generic message
+        // You can checkout our error handling guide for more detailed information
+        // https://developers.facebook.com/docs/ios/errors
     } else {
-        // No, display the login page.
-        [self showLoginView];
+        alertTitle  = @"Something went wrong";
+        alertMessage = @"Please try again later.";
+        NSLog(@"Unexpected error:%@", error);
+    }
+
+    if (alertMessage) {
+        [[[UIAlertView alloc] initWithTitle:alertTitle
+                                    message:alertMessage
+                                   delegate:nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil] show];
     }
 }
 
-- (void)showLoginView
-{
-    UIViewController *topViewController = [self.navigationController topViewController];
-    UIViewController *modalViewController = [topViewController presentedViewController];
-    NSLog(@"TGViewController showLoginView topViewController=%@ modalViewController=%@", topViewController, modalViewController);
-
-    // If the login screen is not already displayed, display it. If the login screen is
-    // displayed, then getting back here means the login in progress did not successfully
-    // complete. In that case, notify the login view so it can update its UI appropriately.
-    if (![modalViewController isKindOfClass:[TGLoginViewController class]]) {
-        TGLoginViewController* loginViewController = [[TGLoginViewController alloc]
-                                                      initWithNibName:@"TGLoginViewController"
-                                                      bundle:nil];
-        loginViewController.delegate = self;
-        [topViewController presentViewController:loginViewController animated:NO completion:nil];
-    } else {
-        TGLoginViewController* loginViewController = (TGLoginViewController*)modalViewController;
-        [loginViewController loginFailed];
-    }
-}
-
-- (void)openSession
-{
-    NSLog(@"TGViewController openSession");
-    [FBSession openActiveSessionWithReadPermissions:@[@"read_stream"]
-                                       allowLoginUI:YES
-                                  completionHandler:
-     ^(FBSession *session,
-       FBSessionState state, NSError *error) {
-         [self sessionStateChanged:session state:state error:error];
-     }];
-}
-
-- (void)sessionStateChanged:(FBSession *)session
-                      state:(FBSessionState) state
-                      error:(NSError *)error
-{
-    NSLog(@"TGViewController sessionStateChanged state=%d", state);
-    switch (state) {
-        case FBSessionStateOpen: {
-            UIViewController *topViewController = [self.navigationController topViewController];
-            NSLog(@"TGViewController topViewController %@", topViewController);
-            if ([[topViewController presentedViewController]
-                 isKindOfClass:[TGLoginViewController class]]) {
-                [topViewController dismissViewControllerAnimated:YES completion:nil];
-            }
-        }
-            break;
-        case FBSessionStateClosed:
-
-        case FBSessionStateClosedLoginFailed:
-            // Once the user has logged in, we want them to
-            // be looking at the root view.
-            [self.navigationController popToRootViewControllerAnimated:NO];
-
-            [FBSession.activeSession closeAndClearTokenInformation];
-
-            [self showLoginView];
-            break;
-        default:
-            break;
-    }
-
-    if (error) {
-        UIAlertView *alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Error"
-                                  message:error.localizedDescription
-                                  delegate:nil
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
-        [alertView show];
-    }
-    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
-        if (!error) {
-            // Success! Include your code to handle the results here
-            self.userNameLabel.text = user.name;
-            self.profileView.profileID = [user objectForKey:@"id"];
-            self.profileView.pictureCropping = FBProfilePictureCroppingSquare;
-        } else {
-            // An error occurred, we need to handle the error
-            // See: https://developers.facebook.com/docs/ios/errors
-        }
-    }];
-}
-
-
-- (IBAction)fbLogout:(id)sender {
-    [FBSession.activeSession closeAndClearTokenInformation];
-}
 
 @end
